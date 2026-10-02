@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+data/demo.db
+
+.fixora/token
+.fixora/*.local.json
+
+# Fixora local secrets and generated reports
+.fixora/
+fixora-report.json
+fixora.sarif
+.venv-snyk/
