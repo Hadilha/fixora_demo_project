@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fixora-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fixora-demo
+  template:
+    metadata:
+      labels:
+        app: fixora-demo
+    spec:
+      containers:
+        - name: app
+          image: fixora-demo:latest
+          securityContext:
+            privileged: true
+            runAsUser: 0
+          env:
+            - name: DEMO_PASSWORD
+              value: "DEMO_ONLY_PASSWORD"
+          ports:
+            - containerPort: 5000

@@ -1,0 +1,10 @@
+# FIXORA SCA demo fixture - do NOT use this file for runtime installation.
+# Exact CVE results depend on the vulnerability database at scan time.
+
+Django==2.2.0
+urllib3==1.25.8
+PyYAML==5.3.1
+Pillow==8.0.0
+
+# Licence-policy test candidate.
+PyMuPDF==1.23.3

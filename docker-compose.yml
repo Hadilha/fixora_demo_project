@@ -1,0 +1,8 @@
+services:
+  fixora-demo:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      DEMO_MODE: "true"
+      DEMO_TOKEN: "DEMO_ONLY_NOT_A_REAL_TOKEN"
